@@ -1,8 +1,12 @@
 {
   "name": "miniapp-svg2iconfont",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ahao430/miniapp-svg2iconfont.git"
+  },  
   "scripts": {
   },
   "pre-commit": [],
