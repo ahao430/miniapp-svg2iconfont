@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "miniapp-svg2iconfont": "^0.0.1"
+    "miniapp-svg2iconfont": "^0.0.3"
   }
 }

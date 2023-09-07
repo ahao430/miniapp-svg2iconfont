@@ -82,7 +82,7 @@ const svg2font = (src, dist, fontName, cb) => {
         });
 };
 
-const ttf2Base64 = (buildDir, output, fontName, dest) => {
+const ttf2Base64 = (buildDir, fontName, dest) => {
     const ttf = fs.readFileSync(`${buildDir}/${fontName}.ttf`);
     const base64Str = Buffer.from(ttf).toString('base64');
     // 写入到css

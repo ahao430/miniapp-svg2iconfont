@@ -18,7 +18,7 @@ const {
 const miniSvg2Font = (options) => {
   options = {
     svg: '', // svg目录
-    build: resolve('temp'), // iconfont输出目录
+    build: './temp', // iconfont输出目录
     dest: '', // base64输出路径及文件名
     fontName: 'icon',
     cb: () => {console.log('完成')},
@@ -38,7 +38,7 @@ const miniSvg2Font = (options) => {
   // svg编译字体
   svg2font(SVG_PATH, BUILD_PATH, options.fontName, () => {
       // ttf转base64
-      ttf2Base64(BUILD_PATH, OUTPUT_FILE, options.fontName, DEST);
+      ttf2Base64(BUILD_PATH, options.fontName, DEST);
       if (options.cb && typeof options.cb === 'function') {
         options.cb()
       }

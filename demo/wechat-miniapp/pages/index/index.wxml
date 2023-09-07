@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="icon-add" style="font-size: 100rpx; color: red;"></text>
+  <text class="icon-delete"></text>
+  <text class="icon-up"></text>
+  <text class="icon-xuanzhong"></text>
+  <text class="icon-zoom"></text>
+</view>
