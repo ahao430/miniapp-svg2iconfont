@@ -18,7 +18,7 @@ const {
 const miniSvg2Font = (options) => {
   options = {
     svg: '', // svg目录
-    build: './temp', // iconfont输出目录
+    build: __dirname + '/temp', // iconfont输出目录
     dest: '', // base64输出路径及文件名
     fontName: 'icon',
     cb: () => {console.log('完成')},
