@@ -1,0 +1,19 @@
+{
+  "name": "miniapp-svg2iconfont",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "pre-commit": [],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+      "svgtofont": "^4.0.0",
+      "fs-extra": "^11.1.1",
+      "svgo": "^3.0.2"
+  },
+  "devDependencies": {
+  }
+}

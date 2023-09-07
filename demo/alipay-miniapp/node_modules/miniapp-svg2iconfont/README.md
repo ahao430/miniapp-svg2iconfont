@@ -1,0 +1,2 @@
+# miniapp-svg2iconfont
+小程序本地svg转base64格式iconfont使用
