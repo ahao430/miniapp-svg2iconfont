@@ -33,9 +33,12 @@ npm i miniapp-svg2iconfont -D
    ```
 
 ## 参数
-
-svg: '', // svg目录
-build: __dirname + '/temp', // iconfont输出目录
-dest: '', // base64输出路径及文件名
-fontName: 'icon',
-cb: () => {console.log('完成')},
+````json
+{
+   svg: '', // svg目录
+   build: __dirname + '/temp', // iconfont输出目录
+   dest: '', // base64输出路径及文件名
+   fontName: 'icon',
+   cb: () => {console.log('完成')},
+}
+````
