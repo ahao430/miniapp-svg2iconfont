@@ -31,3 +31,11 @@ npm i miniapp-svg2iconfont -D
      dest: 'iconfont.wxss' // 输出的iconfont.css文件
    })
    ```
+
+## 参数
+
+svg: '', // svg目录
+build: __dirname + '/temp', // iconfont输出目录
+dest: '', // base64输出路径及文件名
+fontName: 'icon',
+cb: () => {console.log('完成')},
