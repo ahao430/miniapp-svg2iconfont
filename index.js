@@ -53,5 +53,3 @@ const miniSvg2Font = (options) => {
 
 
 module.exports = miniSvg2Font
-exports.ttf2Base64 = ttf2Base64
-exports.copy = copy
