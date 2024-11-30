@@ -82,6 +82,9 @@ const svg2font = (src, dist, fontName, cb) => {
         });
 };
 
+const copy = (src, dest) => {
+  fs.copyFileSync(src, dest);
+}
 const ttf2Base64 = (buildDir, fontName, dest) => {
     const ttf = fs.readFileSync(`${buildDir}/${fontName}.ttf`);
     const base64Str = Buffer.from(ttf).toString('base64');
@@ -102,4 +105,5 @@ module.exports = {
     optimizeSvgs,
     svg2font,
     ttf2Base64,
+    copy,
 };

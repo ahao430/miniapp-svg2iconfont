@@ -7,6 +7,7 @@ const {
     optimizeSvgs,
     svg2font,
     ttf2Base64,
+    copy,
 } = require('./utils/index');
 
 
@@ -20,6 +21,7 @@ const miniSvg2Font = (options) => {
     svg: '', // svg目录
     build: __dirname + '/temp', // iconfont输出目录
     dest: '', // base64输出路径及文件名
+    htmlDest: '',
     fontName: 'icon',
     cb: () => {console.log('完成')},
     ...options,
@@ -28,6 +30,7 @@ const miniSvg2Font = (options) => {
   const SVG_PATH = options.svg;
   const BUILD_PATH = options.build;
   const DEST = options.dest;
+  const HTML_DEST = options.htmlDest;
   
   // 清空fonts
   fs.emptyDirSync(BUILD_PATH);
@@ -39,10 +42,16 @@ const miniSvg2Font = (options) => {
   svg2font(SVG_PATH, BUILD_PATH, options.fontName, () => {
       // ttf转base64
       ttf2Base64(BUILD_PATH, options.fontName, DEST);
+      if (HTML_DEST) {
+        copy(DEST, HTML_DEST)
+      }
       if (options.cb && typeof options.cb === 'function') {
         options.cb()
       }
   });
 }
 
+
 module.exports = miniSvg2Font
+exports.ttf2Base64 = ttf2Base64
+exports.copy = copy
